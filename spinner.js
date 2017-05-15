@@ -19,3 +19,8 @@ Spinner.prototype.update = function () {
 Spinner.prototype.spin = function () {
   this.vel += this.dec*10;
 };
+
+var spinners = document.getElementsByClassName("spinner");
+for (var i = 0; i < spinners.length; i ++ ){
+  sp.push(new Spinner(spinners[i]));
+}
