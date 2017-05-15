@@ -1,4 +1,10 @@
 .spinner
 {
-  width: 10%; height: 10%;
+  width: 96px;
+  height: 96px;
+}
+.spinner:hover
+{
+  width: 128px;
+  height: 128px;
 }
