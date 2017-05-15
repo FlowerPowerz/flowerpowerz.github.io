@@ -8,7 +8,7 @@ function Spinner (s) {
   this.spi.addEventListener("mousedown", this.spin.bind(this));
 };
 Spinner.prototype.update = function () {
-  this.vel += this.rot;
+  this.rot += this.vel;
   if(this.vel > this.dec) { this.vel -= this.dec } else { this.vel = 0 };
   this.spi.style.transform = "rotate(somedeg)".replace("some",this.rot);
   this.spi.style.position = "absolute";
