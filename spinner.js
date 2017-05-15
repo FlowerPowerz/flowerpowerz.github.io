@@ -23,5 +23,5 @@ Spinner.prototype.spin = function () {
 var spinners = document.getElementsByClassName("spinner");
 for (var i = 0; i < spinners.length; i ++ ){
   var spinner = (new Spinner(spinners[i]));
-  requestAnimationFrame(spinner.update);
+  requestAnimationFrame(spinner.update.bind(spinner));
 }
