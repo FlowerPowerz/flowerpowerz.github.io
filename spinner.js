@@ -20,9 +20,8 @@ Spinner.prototype.spin = function () {
   this.vel += this.dec*10;
 };
 
-var sp = [];
 var spinners = document.getElementsByClassName("spinner");
 for (var i = 0; i < spinners.length; i ++ ){
-  sp.push(new Spinner(spinners[i]));
-  requestAnimationFrame(sp[i].update);
+  var spinner = (new Spinner(spinners[i]));
+  requestAnimationFrame(spinner.update);
 }
