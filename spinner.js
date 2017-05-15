@@ -5,7 +5,7 @@ function Spinner (s) {
   this.spi = s;
   this.pos = {x: window.innerWidth*0.2, y: window.innerHeight*0.2};
   this.spi.addEventListener("touchstart", this.spin.bind(this));
-  this.spi.addEventListener("mousedown", this.spin.bind(this));
+  this.spi.addEventListener("click", this.spin.bind(this));
 };
 Spinner.prototype.update = function () {
   this.rot += this.vel;
