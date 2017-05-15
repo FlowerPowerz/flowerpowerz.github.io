@@ -24,5 +24,5 @@ var sp = [];
 var spinners = document.getElementsByClassName("spinner");
 for (var i = 0; i < spinners.length; i ++ ){
   sp.push(new Spinner(spinners[i]));
-  requestAnimationFrame(sp.update());
+  requestAnimationFrame(sp[sp.lenght-1].update());
 }
